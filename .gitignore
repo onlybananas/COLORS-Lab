@@ -1,2 +1,10 @@
 # 64.23.242.55
 # 123qwe
+
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Secrets / configs
+config.php
+.env
