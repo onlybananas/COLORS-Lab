@@ -1,0 +1,31 @@
+@startuml
+start
+
+:Open web app;
+:Enter username and password;
+
+if (Credentials valid?) then (Yes)
+  :Log in to account;
+
+  if (Choose Add Color?) then (Yes)
+    :Enter color name/value;
+    :Save color to account;
+  else (No)
+  endif
+
+  if (Choose Search Color?) then (Yes)
+    :Enter search term;
+    :Search stored colors;
+    :Display matching results;
+  else (No)
+  endif
+
+  :Log out;
+  stop
+
+else (No)
+  :Display login error;
+  stop
+endif
+
+@enduml
