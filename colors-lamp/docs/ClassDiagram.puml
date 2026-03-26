@@ -1,0 +1,29 @@
+@startuml
+
+class User {
+  -userID : int
+  -username : String
+  -password : String
+  +login() : boolean
+  +logout() : void
+}
+
+class Account {
+  -accountID : int
+  -email : String
+  +addColor(color : Color) : void
+  +searchColor(name : String) : Color
+}
+
+class Color {
+  -colorID : int
+  -colorName : String
+  -colorCode : String
+  +save() : void
+  +matches(searchTerm : String) : boolean
+}
+
+User "1" -- "1" Account
+Account "1" -- "0..*" Color
+
+@enduml
