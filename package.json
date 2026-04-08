@@ -1,0 +1,33 @@
+{
+  "name": "colors-lab",
+  "version": "1.0.0",
+  "description": "This project is a simple COLORS web application built during a LAMP Stack lab. It contains:\r - A login page\r - A colors page where users can search for colors and add new colors\r - A PHP backend API that handles login and color",
+  "main": "index.js",
+  "scripts": {
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:php": "php -l Login.php && php -l AddColor.php && php -l SearchColors.php && php -l config.php",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlybananas/COLORS-Lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/onlybananas/COLORS-Lab/issues"
+  },
+  "homepage": "https://github.com/onlybananas/COLORS-Lab#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "globals": "^17.4.0",
+    "htmlhint": "^1.9.2",
+    "stylelint": "^17.6.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
