@@ -8,3 +8,4 @@ Thumbs.db
 # Secrets / configs
 api/config.php
 .env
+node_modules/
