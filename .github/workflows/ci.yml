@@ -32,6 +32,9 @@ jobs:
       - name: Run HTMLHint
         run: npx htmlhint "**/*.html"
 
+      - name: Run Jest tests
+        run: npm test
+        
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
