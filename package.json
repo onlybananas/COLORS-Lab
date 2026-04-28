@@ -4,6 +4,8 @@
   "description": "This project is a simple COLORS web application built during a LAMP Stack lab. It contains:\r - A login page\r - A colors page where users can search for colors and add new colors\r - A PHP backend API that handles login and color",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
+    "ci": "npm run lint && npm run test",
     "lint:js": "eslint .",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:html": "htmlhint \"**/*.html\"",
